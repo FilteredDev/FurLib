@@ -1,7 +1,9 @@
 # README File for all default extensions
 
 ## Jump To
-|[FLMake](https://github.com/FilteredDev/FurLib/tree/main/extensions#flmake)|Quickly load libraries in a synchronous manner|
+* [FLMake](https://github.com/FilteredDev/FurLib/tree/main/extensions#flmake) - Quickly load libraries in a synchronous manner
+* [Component]() - Create Components with ease with a fully custom MCS. Coming soon
+* [Furdux]() - A FurLib implementation of Rodux (coming soon)
 
 ## FLMake
 
