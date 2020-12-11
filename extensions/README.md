@@ -12,7 +12,8 @@ Turns FurLib's loader from asynchronous to synchronous.
 ### Functions
 |Method Name|Returns|Details|
 |-|-|-|
-|FLMake:Compile(``array`` LibrariesToLoad)|``Map`` A dictionary of all loaded libraries|Loads all modules in the ``LibrariesToLoad`` array, this starts from the top and continues until the end. Priority matters|
+|FLMake:Compile(``array`` LibrariesToLoad)|``Map``|Loads all modules in the ``LibrariesToLoad`` array, this starts from the top and continues until the end. Priority matters|
+|FlMake:GetAllExtensions()|``Map<Libary>``|Fetches every extension, or waits for then to finish loading|
 
 ### Code Example
 ```lua
