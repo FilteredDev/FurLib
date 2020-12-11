@@ -3,9 +3,8 @@
 ## Jump To
 * [FLMake](https://github.com/FilteredDev/FurLib/tree/main/extensions#flmake) - Quickly load libraries in a synchronous manner
 * [Component]() - Create Components with ease with a fully custom MCS. Coming soon
-* [Furdux]() - A FurLib implementation of Rodux (coming soon)
 
-## FLMake
+## NoAsync
 
 Turns FurLib's loader from asynchronous to synchronous.
 
@@ -13,13 +12,14 @@ Turns FurLib's loader from asynchronous to synchronous.
 |Method Name|Returns|Details|
 |-|-|-|
 |FLMake:Compile(``array`` LibrariesToLoad)|``Map``|Loads all modules in the ``LibrariesToLoad`` array, this starts from the top and continues until the end. Priority matters|
-|FlMake:GetAllExtensions()|``Map<Libary>``|Fetches every extension, or waits for then to finish loading|
+|FLMake:GetAllExtensions()|``Map<Libary>``|Fetches every extension, or waits for then to finish loading|
 
 ### Code Example
 ```lua
 local FurLibContainer = require(script.FurLib).new()
-local FLMake = FurLibContainer:WaitForExtension("FLMake")
-local libraries = FLMake:Compile{
+local NoAsync = FurLibContainer:WaitForExtension("NoAsync")
+local extensions = NoAsync:GetAllExtensions()
+local libraries = NoAsync:Compile{
   library1, library2
 }
 
