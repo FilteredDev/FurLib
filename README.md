@@ -1,7 +1,7 @@
 FurLib is a framework that centralises all libraries registered under it, making it easy to prevent redundant code.
 
 ## Motivation
----
+
 When working with libraries, I end up running into lots of problems with control flow, when a child module also requires the same module the script is using, eventually resulting in unmaintainable spaghetti code.
 
 The point of FurLib is to try and make every library easily access each other with a simple object, instead of needing to constantly require the same module across scripts, and creating redundant and possibly spaghetti code.
@@ -9,7 +9,7 @@ The point of FurLib is to try and make every library easily access each other wi
 FurLib also contains a shared variable table for the sake of abstraction.
 
 ## Introduction to FurLib Libraries
----
+
 All of FurLib libraries should follow the basic syntax when creating libraries
 ```lua
 local function SayHi(self)
@@ -44,16 +44,17 @@ SayHiLib:SayHi() --> Hello World!
 ```
 
 ## API
----
+
 ## FurLib Module
----
+
 ### Functions
 |Method|Returns|Description|
 |-|-|-|
 |FurLib.new()|``FurLibContainer``|Returns a new container that can be used for registering libraries
 
 ## FurLibContainer
----
+
+### Functions
 |Method|Returns|Description|
 |-|-|-|
 |Container:GetExtensions(``string`` ExtensionName)|``Library``|Returns an extension registed in the container.|
@@ -73,8 +74,7 @@ SayHiLib:SayHi() --> Hello World!
 |Container.LibraryLoaded|``string`` LibraryID|Fired when a library successfully loads|
 |Container.VariableChanged|``string`` VariableName, ``Variant`` ValueChangedTo|Fired when a shared variable in the container is changed|
 
-### Library
----
+## Library
 Libraries and Extensions both use this construct, this part of the documentation exists to enforce what's required by the loader.
 
 ### Properties
@@ -88,9 +88,6 @@ Libraries and Extensions both use this construct, this part of the documentation
 |-|-|-
 |Library:start(``FurLibContainer`` container)|``void``|The function that is called when a library is required, this is mandatory for a library to load successfully|
 
-## Get FurLib
-FurLib is currently available at this RBXM file.
-https://www.roblox.com/library/6073749487/FurLib
-
 ## Issues
-Feel free to report any issues below.
+Feel free to report any issues.
+
