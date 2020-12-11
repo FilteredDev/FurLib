@@ -1,5 +1,8 @@
 # README File for all default extensions
 
+## Jump To
+|[FLMake](https://github.com/FilteredDev/FurLib/tree/main/extensions#flmake)|Quickly load libraries in a synchronous manner|
+
 ## FLMake
 
 Turns FurLib's loader from asynchronous to synchronous.
