@@ -1,7 +1,7 @@
---FurLib Make Compiler, takes a Lua array and loads all modules as libraries, priority matters,
+--NoAsync, turns FurLib into a synchronous loader,
 
 local flmk = {}
-flmk.ID = "FLMake"
+flmk.ID = "NoAsync"
 
 function flmk:start(fl)
 	function self:GetAllExtensions()
