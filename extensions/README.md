@@ -1,7 +1,7 @@
 # README File for all default extensions
 
 ## Jump To
-* [FLMake](https://github.com/FilteredDev/FurLib/tree/main/extensions#flmake) - Quickly load libraries in a synchronous manner
+* [NoAsync](https://github.com/FilteredDev/FurLib/tree/main/extensions#noasync) - FurLib Synchronous Loader
 * [Component]() - Create Components with ease with a fully custom MCS. Coming soon
 
 ## NoAsync
